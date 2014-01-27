@@ -1,0 +1,4 @@
+davidtodos:
+    resource: "@davidtodosBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% block title %}
+        Todos list
+      {% endblock %}
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    {% block stylesheets %}
+      <link rel="stylesheet" href="{{ asset('bundles/davidtodos/css/main.css') }}" type="text/css" media="all" />
+    {% endblock %}
+    {% block javascripts %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="container"> 
+      <div id="content">
+        <div class="inner">
+			<h1>Todos</h1>
+            {% block content %}
+            {% endblock %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

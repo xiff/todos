@@ -1,0 +1,8 @@
+davidtodos_homepage:
+    pattern:  /
+    defaults: { _controller: davidtodosBundle:Default:index }
+ 
+davidtodos_todo:
+    resource: "@davidtodosBundle/Resources/config/routing/todo.yml"
+    prefix: /todo
+

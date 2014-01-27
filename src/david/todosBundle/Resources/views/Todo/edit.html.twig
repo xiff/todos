@@ -1,0 +1,16 @@
+{% extends 'davidtodosBundle::layout.html.twig' %}
+{% block content %}
+	<ul>
+	{% if form is defined %}
+		<li class="edit_form">
+		{{ form_start(form) }}
+			{{ form_label(form.name, 'Modify your todo : ') }}
+			{{ form_widget(form.name) }}
+			{{ form_errors(form.name) }}
+			<input type="submit" />
+		{{ form_end(form) }}
+		</li>
+	{% endif %}
+	</ul>
+	<p><a href="{{ path('todos_todo')}}">Click here</a> to back to the todos list</p>
+{% endblock %}

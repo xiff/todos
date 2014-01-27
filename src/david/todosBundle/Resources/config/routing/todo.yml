@@ -1,0 +1,15 @@
+todos_todo:
+    pattern:  /
+    defaults: { _controller: "davidtodosBundle:Todo:index" }
+ 
+todos_todo_add:
+    pattern:  /add
+    defaults: { _controller: "davidtodosBundle:Todo:add" }
+ 
+todos_todo_edit:
+    pattern:  /edit/{id}
+    defaults: { _controller: "davidtodosBundle:Todo:edit" }
+  
+todos_todo_delete:
+    pattern:  /delete/{id}
+    defaults: { _controller: "davidtodosBundle:Todo:delete" }

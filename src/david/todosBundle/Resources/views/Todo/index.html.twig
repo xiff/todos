@@ -1,0 +1,21 @@
+{% extends 'davidtodosBundle::layout.html.twig' %}
+{% block content %}
+	<ul>
+	{% if form is defined %}
+		<li>
+		{{ form_start(form, {'action': path('todos_todo_add'), 'method': 'POST'}) }}
+			{{ form_label(form.name, 'Add your todo : ') }}
+			{{ form_widget(form.name) }}
+			{{ form_errors(form.name) }}
+			<input type="submit" />
+		{{ form_end(form) }}
+		</li>
+	{% endif %}
+
+    {% for todo in todos %}
+		<li class="{{ cycle(['even', 'odd'], loop.index) }}">
+			<a href="{{ path('todos_todo_edit', { 'id': todo.id }) }}" class="todo">{{ todo.name }}</a> <a href="{{ path('todos_todo_edit', { 'id': todo.id }) }}" class="edit">edit</a> <a href="{{ path('todos_todo_delete', { 'id': todo.id }) }}" class="delete">delete</a>
+        </li>
+    {% endfor %}
+	</ul>
+{% endblock %}

@@ -1,0 +1,101 @@
+body{
+	font: 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+	background-color: #FFFFFF;
+}
+
+a{
+    color: #524F46;
+    outline: none;
+}
+
+#container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content h1 {
+    margin: 0;
+	font-size: 3rem;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	color: rgba(255, 255, 255, 0.1);
+}
+
+#content h2 {
+	font-size: 1rem;
+}
+
+#content .inner {
+    min-width: 400px;
+	max-width: 450px;
+    margin: 0 auto;
+    padding:10px;
+	display: inline-block;
+}
+
+#content #form_name{
+	width:75%;
+} 
+
+#content input[type="submit"]{ 
+	cursor:pointer;
+    text-indent: -9999em;
+	background: url(../images/add.png) no-repeat;
+	display:inline-block;
+	border:0px;
+	width:32px;
+	height:32px;
+}
+
+#content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+#content li {
+    color: #000000;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+	width:100%;
+	float:left;
+	display:inline-block;
+	margin: 0;
+}
+
+#content li.odd{
+    background: #e8edff;
+}
+ 
+#content li:last-child {
+    border: none;
+}
+
+#content li a{
+	float:right;
+	margin-left:5px;
+} 
+ 
+#content li a {
+    text-decoration: none;
+    display: block;
+} 
+
+#content li a.todo {
+    float:left;
+}
+
+#content li a.edit {
+    text-indent: -9999em;
+	background: url(../images/edit.png) no-repeat;
+	background-position:center; 
+	height:25px;
+	width:25px;
+}
+
+#content li a.delete {
+    text-indent: -9999em;
+	background: url(../images/delete.png) no-repeat;
+	background-position:center; 
+	height:25px;
+	width:25px;
+}
